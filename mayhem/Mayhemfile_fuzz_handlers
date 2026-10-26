@@ -1,0 +1,9 @@
+project: savantenvs/rz-libdemangle
+target: fuzz_handlers
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_handlers/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_handlers
+    libfuzzer: true
+    timeout: 5
