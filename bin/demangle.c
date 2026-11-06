@@ -13,7 +13,7 @@
 #define SWIFT ""
 #endif
 
-#define LANGUAGES "java, msvc, objc, d " SWIFT "pascal, rust, " CPP
+#define LANGUAGES "java, msvc, objc, d, " SWIFT "pascal, rust, " CPP
 
 typedef char *(*handler_t)(const char *symbol, RzDemangleOpts opts);
 
